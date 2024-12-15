@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>YT-DLP Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="header">
+      <h1>YT-DLP Downloader</h1>
+    </header>
+    <div class="content">
+      <div class="preset-selector">
+        <label for="preset">プリセットを選択:</label>
+        <select id="preset" class="preset-dropdown">
+          <!-- プリセットオプションがここに動的に追加されます -->
+        </select>
+      </div>
+      <div class="actions">
+        <button id="download" class="download-button">ダウンロード</button>
+        <button id="open-settings" class="settings-button">設定</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

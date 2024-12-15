@@ -1,0 +1,4 @@
+.venv
+build
+downloader.log
+yt_dlp_extension.json

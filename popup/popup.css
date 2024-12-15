@@ -1,0 +1,100 @@
+/* popup/popup.css */
+
+/* ポップアップ全体のスタイル */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+/* ヘッダーのスタイル */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #007bff;
+}
+
+.header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888888;
+    transition: color 0.3s;
+}
+
+.header button:hover {
+    color: #555555;
+}
+
+/* コンテンツのスタイル */
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.content input,
+.content select,
+.content textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.content input:focus,
+.content select:focus,
+.content textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.content button {
+    padding: 12px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.content button:hover {
+    background-color: #218838;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 400px) {
+    body {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .content button {
+        font-size: 14px;
+    }
+}
